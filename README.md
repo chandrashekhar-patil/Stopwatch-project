@@ -302,7 +302,7 @@ Update the socket service URL in `src/services/socket.js` for different environm
 ```javascript
 const socket = io(
   process.env.NODE_ENV === 'production' 
-    ? 'https://your-backend-url.com' 
+    ? 'https://stop-nvm1.onrender.com' 
     : 'http://localhost:10000'
 );
 ```
@@ -350,7 +350,7 @@ For platforms like Vercel, Netlify, or similar:
    ```
 2. Update the socket URL in production:
    ```javascript
-   const socket = io('https://your-backend-domain.com');
+   const socket = io('https://stop-nvm1.onrender.com');
    ```
 3. Deploy the `dist` folder
 
