@@ -11,7 +11,7 @@ dotenv.config();
 
 const app = express();
 const server = createServer(app);
-const io = new Server(server, { cors: { origin: "*" } });
+const io = new Server(server, { cors: { origin: "https://stopwatch-project-two.vercel.app" } });
 
 app.use(cors());
 app.use(express.json());
